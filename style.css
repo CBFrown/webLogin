@@ -277,6 +277,11 @@ menu_bar ul a:hover{
     margin-bottom: 30px;
     text-align: center;
   }
+
+  .neh{
+    align-items: center;
+    justify-content: center;
+  }
   
   .form-group {
     margin-bottom: 20px;
