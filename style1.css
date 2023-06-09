@@ -15,8 +15,20 @@ body{
     background: linear-gradient(to right, black , darkblue);
 }
 
-.container{
-    height: 350px;
+.login{
+    height: 325px;
+    width: 45%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.register{
+    height: 390px;
     width: 45%;
     background: white;
     border-radius: 5px;
