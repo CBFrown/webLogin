@@ -58,19 +58,21 @@
   <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-  <form class="login">
+  <form class="container-login">
     <div class="formin">
-      <input type="text" id="input" placeholder="Username">
+      <input type="text" id="email" placeholder="Email">
+      <small id="emailError"></small>
     </div>
 
     <div class="formin1">
-      <input type="text" id="input" placeholder="Password">
+      <input type="password" id="password" placeholder="Password">
+      <small id="passwordError"></small>
     </div>
 
     
     
 
-    <button id="add" >Log In</button>
+    <button type="submit" id="add" class="submit-btn" >Log In</button>
 
     <div class="formin">
       <p>No Account? <a href="register.html" style="text-decoration:none;">Sign Up</a></p>
@@ -79,5 +81,5 @@
   </form>
   
 </body>
-<script src="script.js"></script>
+<script src="js/login.js"></script>
 </html>

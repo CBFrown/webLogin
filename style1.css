@@ -15,7 +15,7 @@ body{
     background: linear-gradient(to right, black , darkblue);
 }
 
-.login{
+.container-login{
     height: 325px;
     width: 45%;
     background: white;
@@ -39,7 +39,7 @@ body{
     justify-content: center;
 }
 
-#input{
+input{
     height: 50px;
     width: 100%;
     outline: none;
@@ -52,7 +52,7 @@ body{
     margin-bottom: 0%;
 }
 
-#input::placeholder{
+input::placeholder{
     color: black;
 }
 
