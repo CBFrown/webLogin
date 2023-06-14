@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .regis {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .regis input[type="text"],
+  .regis input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .regis input[type="text"]:focus,
+  .regis input[type="password"]:focus {
+    outline: none;
+    border-bottom-color: #4caf50;
+  }
+  
+  .regis small {
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .regis button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  
+  .regis button:hover {
+    cursor: pointer;
+  }
