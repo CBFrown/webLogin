@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-login {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .container-login input[type="text"],
+  .container-login input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .container-login input[type="text"]:focus,
+  .container-login input[type="password"]:focus {
+    outline: none;
+    border-bottom-color: #4caf50;
+  }
+  
+  .container-login small {
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+  }
