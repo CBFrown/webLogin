@@ -171,7 +171,8 @@ if (loginForm) {
     
     
     if (emailValue === getEmailAddress && passwordValue === getPasword) {
-      location.href = 'member-page.html';
+        localStorage.setItem('login-status', 'IN');
+      location.href = 'index.html';
 
     } else if (emailValue === '' || passwordValue === '') {
       message.innerText = 'Email address and password are required.';
