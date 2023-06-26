@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>volleyball</title>
+    <link rel="stylesheet" href="add-to-cart.css">
+    <script src="add-to-cart.js"></script>
+</head>
+
+<body>
+    <div style="display:flex; justify-content: center;">
+<div class="container">
+    <div class="row">
+            <div class="serviceBox">
+                    <span><i class="fa fa-globe"></i></span>
+                </div>
+                <h3 class="title"><b>Wilson AVP Volleyball</b></h3>
+        </div>
+    <div style="display:flex; justify-content: center;">
+        <div class="product-box" id="box1">
+          <div class="brdr">
+            <div style="text-align: center;"></div>
+            <img src="Wilson AVP Volleyball - ₱1025.00.jpg" alt="Wilson AVP Volleyball" width="150" height="200">
+          </div>
+            <div style="text-align: center;">
+                <p class="price"><b>₱1025.00</b></p>
+            <button class="button" onclick="buyNow()" id="box1">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+
+    <div style="display:flex; justify-content: center; flex-direction: row;">
+        <div>
+            <div class="white-box" id="box2" style="display: none;">
+                <div class="text">
+                    <b><u>Product Details</u></b>
+                </div>
+                <div>
+                    <img src="Wilson AVP Volleyball - ₱1025.00.jpg" width="200px" height="300px" ;>
+                </div>
+                <div class="text">
+                    <div>
+                    <b>Wilson AVP Volleyball
+                    </div>
+                    <div style="color: #8524E2; margin-bottom: 10px;">
+                        Price: <b>₱1025.00</b>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <div>
+                            <b>Shipping To: Cagayan de Oro City</b>
+                        </div>
+                        <div>
+                            <b>Shipping fee: ₱ 50.00</b>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 7px;">
+                    <div>
+                        Quantity:
+                    </div>
+                    <button class="q-button" onclick="sub()"><b>-</b></button>
+                    <div id="q">1</div>
+                    <button class="q-button" onclick="add()"><b>+</b></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div style="display:flex; justify-content: center; ">
+            <div class="white-box" id="box3" style="display: none;">
+                <div>
+                    <div class="text" style="gap: 70px;">
+                        <div>
+                            <b><u>Ready to Checkout?</u></b>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 60px; ">
+                            <div style="display: flex; gap: 280px;
+                            font-size: 25px; ">
+                                <div id="q">
+                                    Subtotal:
+                                </div>
+                                <div>
+                                    ₱<span id="subtotal">1025.00</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 25px;">
+                                <div>
+                                    <b>Quantity:
+                                </div>
+                                <div>
+                                    <span id="quantity">1</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 25px;">
+                                <div>
+                                    <b>Shipping Fee:</b>
+                                </div>
+                                <div>
+                                    <b>₱50.00</b>
+                                </div>
+
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 25px; color: #8524E2;">
+                                <div>
+                                    <b>Total:</b>
+                                </div>
+                                <div>
+                                    <b>₱<span id="total">1075.00</span></b>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: center; font-size: 25px;">
+                                <button class="button" onclick="checkout()">
+                                    <b>Checkout</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="white-box" id="box4"
+            style="display:flex; justify-content: center;  flex-direction: row; width: 800px; display: none; font-size: 20px;">
+            <div>
+                <img src="Wilson AVP Volleyball - ₱1025.00.jpg" width="200px" height="300px" ;>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div>
+                    <b>Wilson AVP Volleyball</b>
+                </div>
+                <div>
+                    <b style="color: #8524E2;">₱ 1025.00</b>
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 4px;">
+                    <div>
+                        Quantity:
+                    </div>
+                    <b id="checkout-quantity">
+                    </b>
+                    <div>
+                        |
+                    </div>
+                    <div>
+                        Shipping Free: <b>₱ 50.00</b>
+                    </div>
+                </div>
+                <b id="checkout-total" style="display: flex; gap: 4px; color: #8524E2;">
+                </b>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -60,24 +60,34 @@
 <body>
   <form id="signup-form" class="regis">
     <div class="formin">
-      <input type="text" id="input" placeholder="Email">
+      <input type="text" id="email" placeholder="Email">
       <small id="emailError"></small>
     </div>
 
     <div class="formin1">
-      <input type="text" id="input" placeholder="Username">
+      <input type="text" id="firstname" placeholder="First">
       <small id="fnameError"></small>
     </div>
 
     <div class="formin1">
-      <input type="text" id="input" placeholder="Password">
+      <input type="text" id="lastname" placeholder="Last">
+      <small id="fnameError"></small>
+    </div>
+
+    <div class="formin1">
+      <input type="text" id="password" placeholder="Password">
+      <small id="passwordError"></small>
+    </div>
+
+    <div class="formin1">
+      <input type="submit" class="submit-btn" placeholder="Submit">
       <small id="passwordError"></small>
     </div>
 
     
     
 
-    <button id="add" >Register</button>
+    <button id="add" onclick="log()">Register</button>
     
 
     <div class="formin">
@@ -85,4 +95,5 @@
     </div>
   </form>
 </body>
+<script src="/script_login.js"></script>
 </html>

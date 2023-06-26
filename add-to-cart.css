@@ -1,0 +1,108 @@
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quantity {
+    margin: 10px;
+}
+
+
+  .white-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: #455eb5 0px 5px, #5643cc 0px 10px, #673fd7 0px 15px;
+    padding: 15px;
+    margin: 20px;
+    margin-top: 160px;
+    gap: 15px;
+    border-radius: 8px;
+    width: 500px;
+    border: 2px solid purple;
+    border-top: 2px solid purple;
+  }
+
+
+
+.text {
+    color: rgb(71, 71, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.button {
+    color: #455EB5;
+    background-color: (92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border: 1px solid #673FD7;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 145px;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+
+.q-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5643CC;
+    color: #fbfbfc;
+    padding: 10px;
+    border-radius: 5px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.product-price {
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+}
+
+.product-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+:root{
+    --color1: #8524E2;
+    --color2: #c038ee;
+}
+.serviceBox{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0 15px 15px;
+    border-bottom: 2px solid var(--color1);
+    position: center;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1199px){
+    .serviceBox{ margin: 0 0 30px; }
+}
