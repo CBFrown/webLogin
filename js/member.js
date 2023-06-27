@@ -220,9 +220,18 @@ const statusVal = localStorage.getItem('login-status');
 if (statusVal === 'IN') {
     const logon = document.getElementById("IN");
     logon.remove();
-    document.querySelector('#log').innerHTML += `<a onclick="logout()" id="logout">Logout</a>`;
+    document.querySelector('#myTopnav').innerHTML += `<a onclick="logout()" id="logout">Logout</a>`;
 }else {
-    const logout = document.getElementById("IN");
-    logout.remove();
-    document.querySelector('#log').innerHTML += `<a href="login.html" id='IN'>Login</a>`;
+    // const logout = document.getElementById("IN");
+    // logout.remove();
+    // document.querySelector('#myTopnav').innerHTML += `<a href="login.html" id='IN'>Login</a>`;
 }
+
+function menuNB() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
