@@ -16,8 +16,8 @@ const emailError = document.getElementById('emailError');
 const passwordError = document.getElementById('passwordError');
 const message = document.querySelector('span');
 
-// button
-const logoutBtn = document.getElementById('logout');
+// // button
+// const logoutBtn = document.getElementById('logout');
 
 
 // user signup
@@ -195,13 +195,13 @@ if (loginForm) {
 }
 
 // user logout
-if (logoutBtn) {
-    logoutBtn.addEventListener('click', function() {
-    localStorage.removeItem("login-status");
-    location.replace('index.html');
-  });
+// if (logoutBtn) {
+//     logoutBtn.addEventListener('click', function() {
+//     localStorage.removeItem("login-status");
+//     location.replace('index.html');
+//   });
 
-}
+// }
 
 function logout(){
     localStorage.removeItem("login-status");
@@ -210,9 +210,9 @@ function logout(){
 
 
 // responsive menu 
-const links = document.querySelector('.nav-links');
-const openMenu = document.querySelector('.open-menu');
-const closeMenu = document.querySelector('.close-menu');
+// const links = document.querySelector('.nav-links');
+// const openMenu = document.querySelector('.open-menu');
+// const closeMenu = document.querySelector('.close-menu');
 
 
 const statusVal = localStorage.getItem('login-status');
