@@ -172,7 +172,7 @@ if (loginForm) {
     
     if (emailValue === getEmailAddress && passwordValue === getPasword) {
         localStorage.setItem('login-status', 'IN');
-      location.href = 'index.html';
+        location.href = 'index.html';
 
     } else if (emailValue === '' || passwordValue === '') {
       message.innerText = 'Email address and password are required.';
@@ -196,16 +196,16 @@ if (loginForm) {
 
 // user logout
 if (logoutBtn) {
-
-  const firstname = document.getElementById('firstname');
-
-  firstname.innerText = localStorage.getItem('firstname');
-  firstname.style.color = 'orange';
-
-  logoutBtn.addEventListener('click', function() {
+    logoutBtn.addEventListener('click', function() {
+    localStorage.removeItem("login-status");
     location.replace('index.html');
   });
 
+}
+
+function logout(){
+    localStorage.removeItem("login-status");
+    location.replace('index.html');
 }
 
 
@@ -214,11 +214,15 @@ const links = document.querySelector('.nav-links');
 const openMenu = document.querySelector('.open-menu');
 const closeMenu = document.querySelector('.close-menu');
 
-openMenu.addEventListener('click', function() {
-  links.style.display = 'flex';
-  links.style.top = '0';
-});
 
-closeMenu.addEventListener('click', function() {
-  links.style.top = '-100%';
-});
+const statusVal = localStorage.getItem('login-status');
+
+if (statusVal === 'IN') {
+    const logon = document.getElementById("IN");
+    logon.remove();
+    document.querySelector('#log').innerHTML += `<a onclick="logout()" id="logout">Logout</a>`;
+}else {
+    const logout = document.getElementById("IN");
+    logout.remove();
+    document.querySelector('#log').innerHTML += `<a href="login.html" id='IN'>Login</a>`;
+}
